@@ -2,7 +2,7 @@
 #include <iostream>
 //ROOT
 //CUSTOM
-#include "/dune/app/users/dbrailsf/tracs/plotting_scripts/base/headers.h"
+#include "/dune/app/users/dbrailsf/tracs/plotting_scripts/hotplot/base/headers.h"
 
 void hitPurityPrimaryTrackShowerMaxHits(){
 

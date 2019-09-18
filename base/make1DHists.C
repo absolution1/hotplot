@@ -3,14 +3,14 @@
 //ROOT
 #include "TH1F.h"
 //Custom
-#include "/dune/app/users/dbrailsf/tracs/plotting_scripts/base/config1D.h"
+#include "/dune/app/users/dbrailsf/tracs/plotting_scripts/hotplot/base/config1D.h"
 
 //norm == 0  == no norm
 //norm == 1  == unit norm
 //norm == 2  == max height = 1.
 std::vector<TH1F*> Make1DHists(std::vector<Config1D> const& confs, int norm = 0){
   gROOT->SetStyle("T2K");
-  gROOT->ProcessLine(".x /dune/app/users/dbrailsf/tracs/plotting_scripts/base/ttree_functions/load_ttree_functions.C");
+  gROOT->ProcessLine(".x /dune/app/users/dbrailsf/tracs/plotting_scripts/hotplot/base/ttree_functions/load_ttree_functions.C");
   std::vector<TH1F*> hists;
   for (size_t i_conf = 0; i_conf < confs.size(); i_conf++){
     hists.emplace_back(new TH1F(confs[i_conf].name,"",confs[i_conf].nbins,confs[i_conf].binlow,confs[i_conf].binhigh));

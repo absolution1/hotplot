@@ -5,7 +5,7 @@
 #include "TH1F.h"
 #include "TCanvas.h"
 //Custom
-#include "/dune/app/users/dbrailsf/tracs/plotting_scripts/base/config1D.h"
+#include "/dune/app/users/dbrailsf/tracs/plotting_scripts/hotplot/base/config1D.h"
 
 TCanvas* Draw1DHists(std::vector<Config1D> const& confs, std::vector<TH1F*> & hists){
 

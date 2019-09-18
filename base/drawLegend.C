@@ -6,7 +6,7 @@
 #include "TCanvas.h"
 #include "TLegend.h"
 //Custom
-#include "/dune/app/users/dbrailsf/tracs/plotting_scripts/base/config1D.h"
+#include "/dune/app/users/dbrailsf/tracs/plotting_scripts/hotplot/base/config1D.h"
 
 void DrawLegend(std::vector<Config1D> const& confs, std::vector<TH1F*> & hists, TCanvas *canvas){
 
