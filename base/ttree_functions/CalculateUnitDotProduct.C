@@ -1,3 +1,5 @@
+#ifndef CALCULATEUNITDOTPRODUCT_DEF
+#define CALCULATEUNITDOTPRODUCT_DEF
 //STL
 //ROOT
 #include "TVector3.h"
@@ -14,3 +16,4 @@ double CalculateUnitDotProduct(double x1, double y1, double z1, double x2, doubl
 
   return dot_product;
 }
+#endif

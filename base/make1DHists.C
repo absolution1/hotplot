@@ -22,6 +22,7 @@ std::vector<TH1F*> Make1DHists(std::vector<Config1D> const& confs, int norm = 0)
     hists[i_conf]->SetFillStyle(3003);
     hists[i_conf]->SetFillColor(confs[i_conf].linecolor);
     hists[i_conf]->GetYaxis()->SetTitleOffset(1.2);
+    hists[i_conf]->SetTitle(confs[i_conf].legend);
     //confs[i_conf].chain->Scan("Run:Subrun:EventID:RecoShowerDirectionZ[RecoIndexShowerHighestNHits]:CalculateUnitDotProduct(RecoShowerDirectionX[RecoIndexShowerHighestNHits], RecoShowerDirectionY[RecoIndexShowerHighestNHits], RecoShowerDirectionZ[RecoIndexShowerHighestNHits], TrueStartMomX[0], TrueStartMomY[0], TrueStartMomZ[0])","RecoNShowers == 1 && RecoIndexShowerHighestNHits>-999 && TruePDG[RecoTrueIndexPrimaryShowerParticle[RecoIndexShowerHighestNHits]] == 11 && TrueMotherID[RecoTrueIndexPrimaryShowerParticle[RecoIndexShowerHighestNHits]]==0 ");
     //confs[i_conf].chain->Scan("Run:Subrun:EventID:RecoNShowerHits[RecoIndexShowerHighestNHits]:RecoNInitialTrackHits[RecoIndexShowerHighestNHits]:TruePDG[RecoInitialTrackTrueIndexPrimaryShowerParticle[RecoIndexShowerHighestNHits]]:RecoInitialTrackTrueFractionPrimaryParticleHitsInShower[RecoIndexShowerHighestNHits]","RecoNShowers> 0 && RecoIndexShowerHighestNHits>-999 && TruePDG[RecoTrueIndexPrimaryShowerParticle[RecoIndexShowerHighestNHits]] == 11 && TrueMotherID[RecoTrueIndexPrimaryShowerParticle[RecoIndexShowerHighestNHits]]==0 && RecoInitialTrackTrueIndexPrimaryShowerParticle[RecoIndexShowerHighestNHits]>-999");
 

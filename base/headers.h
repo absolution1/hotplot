@@ -5,5 +5,8 @@
 #include "/dune/app/users/dbrailsf/tracs/plotting_scripts/hotplot/base/make2DHists.C"
 #include "/dune/app/users/dbrailsf/tracs/plotting_scripts/hotplot/base/draw2DHists.C"
 #include "/dune/app/users/dbrailsf/tracs/plotting_scripts/hotplot/base/drawLegend.C"
+#include "/dune/app/users/dbrailsf/tracs/plotting_scripts/hotplot/base/makeTEfficiency.C"
+#include "/dune/app/users/dbrailsf/tracs/plotting_scripts/hotplot/base/drawTEfficiencies.C"
+#include "/dune/app/users/dbrailsf/tracs/plotting_scripts/hotplot/base/makeROC.C"
 
 
